@@ -1,0 +1,6 @@
+
+verify_midp_U0_100_nreps_50.pkl  -- reasonable match
+verify_midp_U0_150_nreps_50.pkl  -- underestimating
+verify_midp_U0_200_nreps_50.pkl  -- wobbles about ... so I guess we're good
+
+by U0 = 100, clopperp looks terrible
