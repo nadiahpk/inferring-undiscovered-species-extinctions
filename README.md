@@ -16,7 +16,7 @@ The highly developed island city-state of Singapore has one of the best-document
 
 ## About the repository
 
-The diagram below gives an overview of the directory structure, and highlights important data and results files. The plants database can be found in `merged.csv`, and the input to the model in `first last detns final.csv`. The method and results for classical and Bayesian inference can be found in the `classical` and `mcmc` directories, respectively.
+The diagram below gives an overview of the directory structure, and highlights important data and results files. The Singapore plants database can be found in `merged.csv`, and the input to the model in `first last detns final.csv`. The method and results for classical and Bayesian inference can be found in the `classical` and `mcmc` directories, respectively.
 
 ![repository structure](https://raw.githubusercontent.com/nadiahpk/inferring-undiscovered-species-extinctions/master/repo_structure.png)
 
