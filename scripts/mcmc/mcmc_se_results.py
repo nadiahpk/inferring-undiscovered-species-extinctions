@@ -12,9 +12,11 @@ rpy2.robjects.numpy2ri.activate() # so I can pass variables to it
 # parameters
 # ---
 
-suffixes = [0, 1, 2, 3, 4, 5] # the suffixes used for the file names
-burnin = 15000 # discard the first 15000 iterations as burn in
+suffixes = [0, 1, 2, 3, 4, 5, 6] # the suffixes used for the file names
+burnin = 15000 # discard the first 15000 iterations as burn in NOTE -- in spare.pdf
 
+# NOTE try omitting large burn in?
+burnin = 400000
 
 # location of chains and info
 # ---
@@ -39,7 +41,6 @@ f.close()
 f = open(dir_results + 'mcmc_lo_0.pkl', 'rb');
 UV1 = pickle.load( f );
 f.close()
-UV1 = UV1[burnin:,:] # remove burnin
 
 # calculate ESS
 ess1V = np.array( mcmcse.ess(UV1[:,:-1]) )
@@ -54,12 +55,13 @@ for suffix in suffixes[1:]:
 
     UV1 = np.append(UV1, UVnext, axis=0)
 
+UV1 = UV1[burnin:,:] # remove burnin
+
 # chain 2
 
 f = open(dir_results + 'mcmc_hi_0.pkl', 'rb');
 UV2 = pickle.load( f );
 f.close()
-UV2 = UV2[burnin:,:] # remove burnin
 
 # calculate ESS
 ess2V = np.array( mcmcse.ess(UV2[:,:-1]) )
@@ -74,6 +76,7 @@ for suffix in suffixes[1:]:
 
     UV2 = np.append(UV2, UVnext, axis=0)
 
+UV2 = UV2[burnin:,:] # remove burnin
 
 # omit last variable U_T = 0
 
@@ -160,7 +163,7 @@ for t in tV:
 # combine UV
 UV = np.append(UV1, UV2, axis=0)
 
-# NOTE: the function below runs out of memory if UV is too long, so shorten it by taking every k'th value
+# the function below runs out of memory if UV is too long, so shorten it by taking every k'th value
 k = 100
 UV_shorten = UV[::k,:]
 

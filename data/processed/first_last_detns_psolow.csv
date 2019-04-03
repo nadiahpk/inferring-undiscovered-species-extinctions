@@ -20,7 +20,7 @@ adenia cordifolia,1900,2013,2,,,
 adenia macrophylla var. singaporeana,1822,2012,27,yes,,
 adenoncos major,1927,1927,1,,,
 adenoncos sumatrana,1889,1889,1,,,
-adenosma javanicum,1894,1995,8,,yes,yes
+adenosma javanicum,1894,1995,8,yes,yes,yes
 adiantum flabellulatum,1891,2002,5,,,
 adiantum hispidulum,1881,2010,6,,,
 adiantum stenochlamys,1910,1910,1,,,
@@ -322,7 +322,7 @@ calamus erinaceus,1889,2002,8,yes,,
 calamus insignis,1890,1999,5,yes,,
 calamus javensis,1894,1999,5,yes,,
 calamus laevigatus,1890,1999,4,yes,,
-calamus lobbianus,1889,1992,8,,,yes
+calamus lobbianus,1889,1992,8,yes,,yes
 calamus luridus,1900,1906,2,,,
 calamus ornatus,1892,1909,2,,,
 calamus oxleyanus,1890,1999,11,yes,,yes
@@ -343,7 +343,7 @@ calophyllum rigidum,1800,1917,3,,,
 calophyllum rubiginosum,1894,2009,7,yes,,
 calophyllum rufigemmatum,1894,2010,14,,,
 calophyllum soulattri,2008,2013,2,yes,,
-calophyllum sundaicum,1822,1994,8,,,yes
+calophyllum sundaicum,1822,1994,8,yes,,yes
 calophyllum tetrapterum,1904,2011,24,yes,,
 calophyllum teysmannii,1889,2012,13,yes,,
 calophyllum wallichianum var. incrassatum,1893,2012,13,yes,,
@@ -376,7 +376,7 @@ castanopsis malaccensis,1893,2003,4,,,
 castanopsis megacarpa,1884,2005,11,yes,,
 castanopsis nephelioides,1884,2010,4,yes,,
 castanopsis schefferiana,1861,2009,11,yes,,
-castanopsis wallichii,1884,2003,17,,,yes
+castanopsis wallichii,1884,2003,17,yes,,yes
 casuarina equisetifolia,1904,2016,23,yes,yes,
 cayratia japonica,1893,2012,4,yes,,
 cayratia mollissima,1884,2013,30,yes,,
@@ -455,7 +455,7 @@ coelospermum truncatum,1887,2012,7,,,
 coelostegia griffithii,1892,2012,5,,,
 colubrina asiatica,1822,2012,24,yes,yes,
 combretum sundaicum,1884,2010,12,yes,,
-combretum tetralophum,1996,1997,2,,,yes
+combretum tetralophum,1996,1997,2,yes,,yes
 commelina attenuata,1893,1950,8,,,
 commersonia bartramia,1857,2004,31,yes,yes,yes
 connarus ferrugineus,1884,2010,6,yes,,
@@ -764,7 +764,7 @@ ellipeia cuneifolia,1893,2009,2,,,
 elytranthe albida,1896,1896,1,,,
 elytranthe arnottiana,1896,1951,2,,,
 embelia canescens,1889,2011,18,yes,,
-embelia lampanii,1884,1992,13,,yes,yes
+embelia lampanii,1884,1992,13,yes,yes,yes
 embelia ribes,1838,2010,32,yes,yes,
 endiandra maingayi,1933,2008,2,,,
 endocomia canarioides,1894,2009,3,yes,,
@@ -1001,7 +1001,7 @@ hiptage sericea,1891,1894,3,,,
 histiopteris incisa,1895,1994,5,,,
 homalium grandiflorum,1894,2004,11,yes,,
 homalomena deltoidea,1889,2003,2,,,
-homalomena griffithii,1887,1993,11,,,yes
+homalomena griffithii,1887,1993,11,yes,,yes
 homalomena humilis var. pumila,1889,1981,10,,,
 homalomena pendula,1890,1890,1,,,
 homalomena rostrata,1889,1965,8,,,
@@ -1016,7 +1016,7 @@ hornstedtia scyphifera,1884,2011,12,yes,,
 horsfieldia brachiata,1893,2006,5,,,
 horsfieldia crassifolia,1822,2010,26,yes,,
 horsfieldia grandis,1881,2005,5,yes,,
-horsfieldia irya,1897,1992,10,,,yes
+horsfieldia irya,1897,1992,10,yes,,yes
 horsfieldia polyspherula,1886,2013,25,yes,,
 horsfieldia punctatifolia,1953,2010,7,yes,,
 horsfieldia sucosa,1884,2009,17,yes,,
@@ -1089,7 +1089,7 @@ jasminum elongatum,1850,2013,28,yes,,
 jasminum griffithii,1893,1900,3,,,
 jasminum longipetalum,1900,1900,1,,,
 justicia quadrifaria,1889,1889,1,,,
-justicia vasculosa,1889,1995,10,,,yes
+justicia vasculosa,1889,1995,10,yes,,yes
 kadsura scandens,1894,2013,7,yes,,
 kandelia candel,1998,2012,3,,,
 kibara coriacea,1884,2009,3,,,
@@ -1123,7 +1123,7 @@ lasia spinosa,1822,2009,4,yes,,
 lasianthus appressus,1992,2013,2,,,
 lasianthus attenuatus,1957,2012,11,yes,,
 lasianthus constrictus,1978,2012,4,,,
-lasianthus cyanocarpus,1966,2007,5,,,yes
+lasianthus cyanocarpus,1966,2007,5,yes,,yes
 lasianthus ellipticus,1906,2010,4,,,
 lasianthus griffithii,1982,1982,1,,,
 lasianthus maingayi,1896,1982,4,,,
@@ -1144,7 +1144,7 @@ lepionurus sylvestris,1885,2013,11,yes,,
 lepironia articulata,1889,1900,3,yes,,
 lepisanthes fruticosa,1940,2008,2,,,
 lepisanthes rubiginosa,1884,2009,11,yes,yes,
-lepisanthes senegalensis,1996,1997,2,,,yes
+lepisanthes senegalensis,1996,1997,2,yes,,yes
 lepisorus longifolius,1892,1925,4,,,
 lepturus repens,1929,2003,6,,yes,
 leuconotis griffithii,1867,2013,23,yes,,
@@ -1179,7 +1179,7 @@ lithocarpus conocarpus,1881,2010,22,yes,,
 lithocarpus elegans,1836,2011,12,yes,,
 lithocarpus encleisocarpus,1889,2012,13,yes,,
 lithocarpus ewyckii,1884,2011,16,yes,,
-lithocarpus hystrix,1884,1997,9,,,yes
+lithocarpus hystrix,1884,1997,9,yes,,yes
 lithocarpus lucidus,1884,2012,14,yes,,
 lithocarpus sundaicus,1954,1969,6,,,
 lithocarpus wallichianus,1889,2011,6,,,
@@ -1226,7 +1226,6 @@ macaranga lowii,1892,2010,13,yes,,
 macaranga puncticulata,1932,1932,1,,,
 macaranga recurvata,1890,2010,12,yes,,
 macaranga trichocarpa,1884,2005,27,yes,,yes
-macaranga triloba,1955,2003,11,,yes,yes
 machaerina rubiginosa,1893,1900,3,,,
 maclurodendron porteri,1884,2003,13,yes,,
 macodes petola,1894,1894,1,,,
@@ -1245,7 +1244,7 @@ maesa ramentacea,1837,2012,36,yes,yes,
 magnolia elegans,1892,2009,7,yes,,
 magnolia maingayi,1900,1975,5,yes,,
 magnolia singapurensis,1889,2010,21,yes,,
-magnolia villosa,1939,2003,10,,,yes
+magnolia villosa,1939,2003,10,yes,,yes
 mallotus macrostachyus,1884,1892,3,,,
 mallotus paniculatus,1838,2013,22,yes,yes,
 mangifera caesia,1885,2012,9,yes,,
@@ -1276,7 +1275,7 @@ matthaea sancta,1822,2012,19,yes,,
 maytenus emarginata,1992,1992,1,,,
 medinilla crassifolia,1889,1909,5,,,
 megistostigma glabratum,1853,1907,2,,,
-meiogyne virgata,1885,1995,10,,,yes
+meiogyne virgata,1885,1995,10,yes,,yes
 melaleuca cajuputi,1955,2012,6,,,
 melanochyla angustifolia,2004,2004,1,yes,,
 melanochyla auriculata,1892,1954,4,yes,,
@@ -1308,9 +1307,9 @@ memecylon minutiflorum,1898,1963,3,,,
 memecylon oleifolium,1884,1907,3,,,
 memecylon ovatum,1898,2011,8,,,
 memecylon paniculatum,1941,2011,7,yes,,
-memecylon pseudomegacarpum,1892,2003,14,,,yes
+memecylon pseudomegacarpum,1892,2003,14,yes,,yes
 memecylon pubescens,1899,2009,5,,,
-merope angulata,1893,2003,12,,,yes
+merope angulata,1893,2003,12,yes,,yes
 merremia hederacea,1890,2011,13,yes,yes,
 mesophlebion chlamydophorum,1881,2010,14,yes,,
 mesophlebion crassifolium,1899,2003,4,,,
@@ -1406,7 +1405,7 @@ oberonia stenophylla,1890,1930,2,,,
 ochanostachys amentacea,1891,2008,18,yes,,
 ochrosia oppositifolia,1822,1986,2,,,
 ochthocharis javanica,1831,1948,13,,,
-oldenlandia affinis,1930,2004,12,,,yes
+oldenlandia affinis,1930,2004,12,yes,,yes
 oldenlandia prostrata,1830,2010,11,yes,,
 olea brachiata,1838,2012,15,yes,,
 oncosperma horridum,1890,2012,8,yes,,
@@ -1447,7 +1446,7 @@ palaquium xanthochymum,1884,2012,6,yes,,
 pandanus corneri,1960,1960,1,,,
 pandanus houlletii,1892,2012,7,,,
 pandanus militaris,1894,1894,1,,,
-pandanus odorifer,1890,2003,14,,yes,yes
+pandanus odorifer,1890,2003,14,yes,yes,yes
 pandanus polycephalus,1941,1941,1,,,
 pandanus rostratus,1939,1966,3,,,
 pandanus singaporensis,1910,2012,4,,,
@@ -1480,7 +1479,7 @@ payena obscura,1892,2007,5,,,
 peliosanthes teta,1996,2012,5,yes,,
 pellacalyx axillaris,1881,2015,24,yes,,
 pellacalyx saccardianus,1889,2010,24,yes,,
-peltophorum pterocarpum,1890,2004,18,,,yes
+peltophorum pterocarpum,1890,2004,18,yes,,yes
 pemphis acidula,1822,2012,27,,,
 pentace triptera,1894,2010,9,yes,,
 pentaphragma ellipticum var. ellipticum,1889,1995,23,yes,,yes
@@ -1532,7 +1531,7 @@ piper schizonephos,2012,2012,1,,,
 pittosporum ferrugineum,1836,2007,19,yes,,
 plagiostachys lateralis,1890,1909,4,,,
 plagiostachys mucida,1892,1892,1,,,
-planchonella linggensis,1996,2007,6,,,yes
+planchonella linggensis,1996,2007,6,yes,,yes
 planchonia grandis,1894,1935,3,yes,,
 platea latifolia,1940,2009,2,,,
 platycerium coronarium,1822,2010,15,yes,yes,
@@ -1546,10 +1545,10 @@ plocoglottis gigantea,1892,2009,6,yes,,
 plocoglottis javanica,1889,2010,10,yes,,
 plocoglottis lowii,1889,2015,6,yes,,
 ploiarium alternifolium,1822,2010,21,yes,yes,
-pluchea indica,1853,2007,22,,yes,yes
+pluchea indica,1853,2007,22,yes,yes,yes
 podocarpus polystachyus,1796,2013,27,yes,,
 podochilus microphyllus,1836,1948,5,,,
-pogonanthera pulverulenta,1884,1997,13,,,yes
+pogonanthera pulverulenta,1884,1997,13,yes,,yes
 pogonatherum crinitum,2002,2003,2,,yes,
 poikilospermum cordifolium,1973,2008,2,,,
 poikilospermum suaveolens,1890,2009,14,yes,,
@@ -1560,7 +1559,7 @@ polyalthia clavigera,1894,1907,2,,,
 polyalthia glauca,1932,2010,8,,,
 polyalthia hookeriana,1951,1951,1,,,
 polyalthia hypoleuca,1994,1994,1,,,
-polyalthia jenkinsii,1938,1989,4,,,yes
+polyalthia jenkinsii,1938,1989,4,yes,,yes
 polyalthia lateriflora,1937,2013,9,,,
 polyalthia rumphii,1888,2010,12,,,
 polyalthia sclerophylla,1900,1996,4,,,
@@ -1652,7 +1651,7 @@ rhaphidophora minor,1890,2008,5,,,
 rhaphidophora montana,1961,2005,5,,,
 rhizophora apiculata,1884,2012,28,yes,yes,
 rhizophora lamarckii,2011,2012,2,,,
-rhizophora mucronata,1822,2005,22,,yes,yes
+rhizophora mucronata,1822,2005,22,yes,yes,yes
 rhizophora parviflora,1998,1998,1,,,
 rhizophora stylosa,1918,2016,19,,,
 rhodamnia cinerea,1822,2011,18,yes,yes,
@@ -1692,7 +1691,7 @@ santiria griffithii,1884,2003,8,yes,yes,
 santiria laevigata,1894,2010,14,yes,,
 santiria rubiginosa,1892,2010,11,yes,,
 santiria tomentosa,1884,1958,8,yes,,
-saprosma glomerulatum,1981,1998,5,,,yes
+saprosma glomerulatum,1981,1998,5,yes,,yes
 sarcolobus globosus,1885,1903,6,,,
 sarcosperma paniculatum,1873,2013,2,yes,,
 sarcostoma javanica,1910,1914,2,,,
@@ -1746,7 +1745,7 @@ selaginella argentea,1842,1881,2,yes,,
 selaginella ciliaris,1899,2010,5,,yes,
 selaginella intermedia,1842,2010,19,yes,,
 selaginella mayeri,1893,2002,4,yes,,
-selaginella roxburghii,1830,2002,14,,,yes
+selaginella roxburghii,1830,2002,14,yes,,yes
 selaginella willdenowii,1841,2002,13,,,
 selliguea lateritia,1893,1924,6,,,
 serianthes grandiflora,1949,2012,8,,,

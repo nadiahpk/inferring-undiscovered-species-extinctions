@@ -10,6 +10,9 @@ import pymc3 as pymc3
 # ---
 
 suffixes = [0, 1] # results suffixes we'll use
+# suffixes = [0] # NOTE test it works
+sample_max = 40000 # how many iterations to do the plot for
+end_bits = 2000 # start and end gap
 
 
 # location of chains and info
@@ -32,27 +35,33 @@ f.close()
 # chain 1
 
 f = open(dir_results + 'mcmc_lo_0.pkl', 'rb');
-UV1 = pickle.load( f );
+UV1_ = pickle.load( f );
 f.close()
 
 for suffix in suffixes[1:]:
 
     f = open(dir_results + 'mcmc_lo_' + str(suffix) + '.pkl', 'rb');
     UVnext = pickle.load( f ); f.close()
-    UV1 = np.append(UV1, UVnext, axis=0)
+    UV1_ = np.append(UV1_, UVnext, axis=0)
 
 # chain 2
 
 f = open(dir_results + 'mcmc_hi_0.pkl', 'rb');
-UV2 = pickle.load( f );
+UV2_ = pickle.load( f );
 f.close()
 
 for suffix in suffixes[1:]:
 
     f = open(dir_results + 'mcmc_hi_' + str(suffix) + '.pkl', 'rb');
     UVnext = pickle.load( f ); f.close()
-    UV2 = np.append(UV2, UVnext, axis=0)
+    UV2_ = np.append(UV2_, UVnext, axis=0)
 
+
+# trim to the length of the plot
+# ---
+
+UV1 = UV1_[ :sample_max, : ]
+UV2 = UV2_[ :sample_max, : ]
 
 # find the last variable to satisfy $\hat{R} < 1.1$ and plot
 # ---
@@ -64,7 +73,7 @@ log_UV1 = np.log(UV1); log_UV2 = np.log(UV2)
 
 # sections to calculate GR on
 lenUV = UV1.shape[0]
-llV = list(range(-lenUV+5000,-5000))[0::1000] # from 5000 to 1000 from the end, steps of 1000
+llV = list(range(-lenUV+end_bits,-end_bits))[0::1000] # from end_bits to end_bits from the end, steps of 1000
 xV = [ lenUV+ll for ll in llV] # list of iteration numbers
 
 # find the last to cross

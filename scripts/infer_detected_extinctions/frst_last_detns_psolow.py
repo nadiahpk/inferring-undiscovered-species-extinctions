@@ -9,8 +9,12 @@ import csv
 # locations of intermediate data
 # ---
 
-fname_frstlast = '../../data/processed/first_last_detns.csv'
-fname_rejects = '../../results/infer_detected_extinctions/seen_recently_inferred_extinct.csv'
+# first and last detections and initial expert determinations
+fname_frstlast = '../../data/processed/first_last_detns.csv' 
+
+# contains both the Solow P-value, and experts' second opinions on whether
+# the species designated by the P-value as extinct were in fact extinct
+fname_solow_expert = '../../data/inferred_extinct_second_opinion/seen_recently_inferred_extinct_second_expert_opinion.csv'
 
 
 # read in data
@@ -19,33 +23,49 @@ fname_rejects = '../../results/infer_detected_extinctions/seen_recently_inferred
 # first and last detections and other info
 csv_f = csv.reader(open(fname_frstlast))
 header = next(csv_f)
-fl = [ row for row in csv_f ]
+fl = { row[0]: row[1:] for row in csv_f } # { standard_name: [ frst, last, no_detns, expert_extant?, chong_common?] }
 
-# list of species rejected as extant according to Solow's P < 0.1
-csv_f = csv.reader(open(fname_rejects))
+# experts' second opinions on those designated extinct by Solow P-value
+csv_f = csv.reader(open(fname_solow_expert))
 header = next(csv_f)
-rejects = [ row[0] for row in csv_f ]
+sl = [ row for row in csv_f ] # [ family, spp_name, frst, last, Solow_P, life_form, cons_status, cultivated, expert_2nd_opinion, comment
 
 
-# append the Solow p-value information as needed
-for row in fl:
+# for each designated extinct by Solow, append its info to fl
+# ---
 
-    spp_name = row[0]
+# make room on each row
+for spp_name in fl:
 
-    if spp_name in rejects:
+    fl[spp_name].append('') # empty space where I'll put a 'yes' if the Solow test designated it extinct
 
-        row.append('yes')
+# for each designated extinct by Solow, (1) mark 'yes' for designated extinct by Solow, and (2) update the expert info.
+for row in sl:
 
-    else:
+    # 1. mark 'yes' because designated extinct by Solow
 
-        row.append('')
+    spp_name = row[1].lower()
+    fl[spp_name][5] = 'yes'
 
+    # 2. update the expert info
+
+    expert_2nd_opinion = row[8].strip().lower()
+
+    if expert_2nd_opinion == 'extant':
+
+        fl[spp_name][3] = 'yes'
+
+
+# save result to file
+# ---
 
 f = open('../../data/processed/first_last_detns_psolow.csv','w')
 
 f.write('standard name,first detection,last detection,no. detns,expert extant?,chong common?,Solow reject heuristic?\n')
 
-for row in fl:
+for spp_name in sorted(fl):
+
+    row = [spp_name] + fl[spp_name]
 
     f.write( ','.join(row) )
     f.write( '\n' )

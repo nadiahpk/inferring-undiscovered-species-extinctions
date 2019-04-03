@@ -22,6 +22,7 @@ suffixes = [0, 1, 2, 3, 4, 5] # the suffixes used for the file names
 burnin = 15000 # discard the first 15000 iterations as burn in
 percentile = 95 # CI that I want
 
+suffixes = [0, 1] # NOTE testing -- fine
 
 
 # location of chains and info

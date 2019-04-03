@@ -20,8 +20,10 @@ from undetected_extinctions.undetected_extinctions import frst_last_changed_E, g
 U_T = 0 # assume that at the final timestep there are no undetected species remaining
 nreps = 150000
 start_type = 'lo' # or can be: 'hi', to high-start chains; 'lo', for low-start chains
-previous_suffix = 4 # or set to a number to start at a previous point
+previous_suffix = 6 # None, or set to a number to start at a previous point
 
+# for the first run, suffix = 0
+# nreps = 30000
 
 # where databases are
 # ---
@@ -105,6 +107,9 @@ UV = list()
 
 for rep in range(nreps):
 
+    if rep % 1000 == 0:
+        print(str(rep))
+
     # update U_0 using the backwards sampling
     # ---
 
@@ -158,12 +163,10 @@ UV = np.array(UV)
 # save to file
 # ---
 
-'''
 if suffix == 0:
     f = open(dir_results + 'years_mod.pkl', 'wb')
     pickle.dump( years_mod, f ) # 0.
     f.close()
-'''
 
 f = open(dir_results + 'mcmc_' + start_type + '_' + str(suffix) + '.pkl', 'wb')
 pickle.dump( UV, f ) # 0.
