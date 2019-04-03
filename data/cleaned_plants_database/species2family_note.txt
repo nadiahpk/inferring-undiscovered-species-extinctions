@@ -1,0 +1,16 @@
+Family names in the plants database (merged.csv) have been left as they were received from the database source.
+However, for the family-level analyses, we addressed synonyms and standardised the family names.
+
+* Synonyms include (standardised to name on right):
+    Compositae = Asteraceae
+    Gramineae = Poaceae
+    Leguminosae = Fabaceae
+    Guttiferae = Clusiaceae
+
+* All species of the Calophyllum genus were put into Calophyllaceae (from Clusiaceae/Guttiferae)
+
+* Subfamilies were only indicated for a few, so all subfamilies were reduced to family level, including:
+    Apocynaceae-asc
+    Malvaceae-byt
+    Mavaceae-dom
+    Leguminosae-pap
