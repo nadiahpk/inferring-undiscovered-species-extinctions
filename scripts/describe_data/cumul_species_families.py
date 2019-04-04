@@ -20,16 +20,24 @@ header = next(csv_f)
 spp_yrs = [ (row[0], int(row[1])) for row in csv_f ]
 
 
-# turn into family and year of first detection
+# read in the dictionary from species name to family name
 # ---
 
-# read in the dictionary from species name to family name
 csv_f = csv.reader(open(fname_spp2fam))
 header = next(csv_f)
 spp2famD = { row[0]: row[1] for row in csv_f }
 
+
+# create list of families seen
+# ---
+
+famS = set([ spp2famD[spp_yr[0]] for spp_yr in spp_yrs ])
+
+
+# turn into family and year of first detection
+# ---
+
 # create a dictionary of { fam: years seen }
-famS = set( spp2famD.values() )
 fam_yrD = { fam: 3000 for fam in famS } # initialise
 
 for spp, yr in spp_yrs:

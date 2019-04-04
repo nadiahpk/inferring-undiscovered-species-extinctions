@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 # ---
 
 fname_frstlast = '../../data/processed/first_last_detns.csv'
-fname_spp2fam = '../../data/cleaned_plants_database/species2family.csv'
 
 
 # read in frst, last detection tuples

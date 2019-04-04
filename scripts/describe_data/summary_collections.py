@@ -87,10 +87,10 @@ key2summary = {
         }
 
 summaryD = { 
-        'SING': { 'no specimens': 0, 'species': set(), 'families': set(), 'pretty name': 'The Singapore Herbarium' },
-        'SINU': { 'no specimens': 0, 'species': set(), 'families': set(), 'pretty name': 'The Herbarium of the National University of Singapore' },
-        'Naturalis Botany': { 'no specimens': 0, 'species': set(), 'families': set(), 'pretty name': 'Naturalis Biodiversity Center' },
-        'KEW': { 'no specimens': 0, 'species': set(), 'families': set(), 'pretty name': 'Royal Botanic Gardens Kew' },
+        'SING': { 'no specimens': 0, 'species': set(), 'families': set(), 'pretty name': 'Singapore Botanic Gardens Herbarium' },
+        'SINU': { 'no specimens': 0, 'species': set(), 'families': set(), 'pretty name': 'Herbarium of the Lee Kong Chian Natural History Museum' },
+        'Naturalis Botany': { 'no specimens': 0, 'species': set(), 'families': set(), 'pretty name': 'National Herbarium of the Netherlands' },
+        'KEW': { 'no specimens': 0, 'species': set(), 'families': set(), 'pretty name': 'Herbarium at the Royal Botanic Gardens Kew' },
         'Other': { 'no specimens': 0, 'species': set(), 'families': set(), 'pretty name': 'Other' },
     }
 

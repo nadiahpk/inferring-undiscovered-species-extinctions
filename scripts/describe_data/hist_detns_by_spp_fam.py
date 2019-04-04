@@ -28,8 +28,13 @@ csv_f = csv.reader(open(fname_spp2fam))
 header = next(csv_f)
 spp2famD = { row[0]: row[1] for row in csv_f }
 
+
+# create list of families seen
+# ---
+
+famS = set([ spp2famD[spp_nodetn[0]] for spp_nodetn in spp_nodetns ])
+
 # create a dictionary of { fam: years seen }
-famS = set( spp2famD.values() )
 fam_nodetns = { fam: 0 for fam in famS } # initialise
 
 for spp, nodetns in spp_nodetns:

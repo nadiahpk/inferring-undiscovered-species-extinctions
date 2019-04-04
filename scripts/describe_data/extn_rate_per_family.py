@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # ---
 
 fname_species2family = '../../data/cleaned_plants_database/species2family.csv' # header: standardise name,family
-fname_extants = '../../data/processed/first_last_detns_final.csv' # header: standard name,first detection,last detection
+fname_extants = '../../data/processed/first_last_detns.csv' # header: standard name,first detection,last detection
 
 
 # read in species names and families, and create dictionary from species name to family
@@ -24,14 +24,31 @@ spp2fam = { row[0]: row[1] for row in csv_f }
 
 csv_f = csv.reader(open( fname_extants ))
 header = next(csv_f)
-spp2status = { row[0]: 'extant' if row[2] == '2015' else 'extinct' for row in csv_f }
+
+spp2status = dict()
+for row in csv_f:
+
+    spp_name = row[0]
+    last_detn = int(row[2])
+    expert_extant = row[4]
+    common = row[5]
+
+    if last_detn >= 1985 or expert_extant == 'yes' or common == 'yes':
+
+        spp2status[spp_name] = 'extant'
+
+    else:
+
+        spp2status[spp_name] = 'extinct'
 
 
 # create a dictionary of families with value list: [ no_extinct, no_total ]
 # ---
 
 famD = dict()
-for spp_name, family in spp2fam.items():
+for spp_name, status in spp2status.items():
+
+    family = spp2fam[spp_name]
 
     if family not in famD:
         famD[family] = [0,0]
@@ -40,7 +57,7 @@ for spp_name, family in spp2fam.items():
     famD[family][1] += 1
 
     # add to extinct count if extinct
-    if spp2status[spp_name] == 'extinct':
+    if status == 'extinct':
         famD[family][0] += 1
 
 

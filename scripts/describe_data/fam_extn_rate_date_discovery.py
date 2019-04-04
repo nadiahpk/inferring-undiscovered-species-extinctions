@@ -8,7 +8,7 @@ import numpy as np
 # ---
 
 fname_species2family = '../../data/cleaned_plants_database/species2family.csv' # header: standardise name,family
-fname_extants = '../../data/processed/first_last_detns_final.csv' # header: standard name,first detection,last detection
+fname_extants = '../../data/processed/first_last_detns.csv' # header: standard name,first detection,last detection
 fname_frstdetn = '../../data/processed/detections_records.csv' # header: standard name,first detection,second detection
 
 
@@ -26,7 +26,22 @@ spp2fam = { row[0]: row[1] for row in csv_f }
 
 csv_f = csv.reader(open( fname_extants ))
 header = next(csv_f)
-spp2status = { row[0]: 'extant' if row[2] == '2015' else 'extinct' for row in csv_f }
+
+spp2status = dict()
+for row in csv_f:
+
+    spp_name = row[0]
+    last_detn = int(row[2])
+    expert_extant = row[4]
+    common = row[5]
+
+    if last_detn >= 1985 or expert_extant == 'yes' or common == 'yes':
+
+        spp2status[spp_name] = 'extant'
+
+    else:
+
+        spp2status[spp_name] = 'extinct'
 
 # read in species names and date of discovery
 # ---
@@ -40,7 +55,9 @@ spp2disc = { row[0]: int(row[1]) for row in csv_f }
 # ---
 
 famD = dict()
-for spp_name, family in spp2fam.items():
+for spp_name, status in spp2status.items():
+
+    family = spp2fam[spp_name]
 
     if family not in famD:
         famD[family] = [0,0,2015]
@@ -88,12 +105,12 @@ plt.scatter(3000, 1, color='black', edgecolor='none', alpha=0.7, s=100*scaler, l
 plt.scatter(3000, 1, color='black', edgecolor='none', alpha=0.7, s=50*scaler, label='50 species')
 plt.scatter(3000, 1, color='black', edgecolor='none', alpha=0.7, s=10*scaler, label='10 species')
 plt.scatter(3000, 1, color='black', edgecolor='none', alpha=0.7, s=1*scaler, label='1 species')
-leg = plt.legend(loc='upper center', title=r'family size:', ncol=4, bbox_to_anchor=(0.5, 1.20), borderpad=0.7)
+leg = plt.legend(loc='upper center', title=r'family size:', ncol=4, bbox_to_anchor=(0.5, 1.30), borderpad=0.7)
 leg._legend_box.align = "left"
 #plt.ylim( (-0.05, 1.2) )
 
 # plt.show()
-plt.tight_layout(rect=[0,0,1,.89])
+plt.tight_layout(rect=[0,0,1,.99])
 plt.savefig('../../results/describe_data/fam_extn_rate_date_discovery.pdf')
 plt.close()
 
