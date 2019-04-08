@@ -10,10 +10,12 @@ import pymc3 as pymc3
 # ---
 
 suffixes = [0, 1] # results suffixes we'll use
-# suffixes = [0] # NOTE test it works
 sample_max = 40000 # how many iterations to do the plot for
 end_bits = 2000 # start and end gap
 
+suffixes = [0, 1] # NOTE test it works
+sample_max = 100000
+end_bits = 1000 # start and end gap
 
 # location of chains and info
 # ---

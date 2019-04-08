@@ -6,7 +6,7 @@ acanthus ilicifolius,1896,2015
 acanthus volubilis,1889,2015
 acer laurinum,2010,2015
 acriopsis liliifolia,1822,2015
-acriopsis ridleyi,1889,1889
+acriopsis ridleyi,1889,2015
 acrostichum aureum,1860,2015
 acrostichum speciosum,1866,2015
 actephila excelsa var. javanica,1884,2015
@@ -50,17 +50,17 @@ aglaia meliosmoides,1890,2015
 aglaia multinervis,1941,2015
 aglaia odoratissima,1893,2015
 aglaia oligophylla,2009,2015
-aglaia palembanica,1884,1918
+aglaia palembanica,1884,2015
 aglaia rubiginosa,1892,2015
 aglaia rufinervis,1892,2015
 aglaia teysmanniana,2006,2015
-aglaia tomentosa subsp. cordata,1884,1977
+aglaia tomentosa subsp. cordata,1884,2015
 aglaomorpha speciosa,1822,1936
 aglaonema nebulosum,1961,2015
 aglaonema nitidum,1889,2015
 aglaonema simplex,1889,2015
 agrostistachys borneensis,1884,2015
-agrostistachys gaudichaudii,1885,1904
+agrostistachys gaudichaudii,1885,2015
 agrostistachys sessilifolia,1948,1982
 agrostophyllum majus,1889,1900
 agrostophyllum stipulatum,1888,2015
@@ -296,7 +296,7 @@ bulbophyllum ovalifolium,1889,1894
 bulbophyllum patens,1889,1894
 bulbophyllum pileatum,1891,1892
 bulbophyllum praetervisum,2014,2015
-bulbophyllum pulchellum,1889,1955
+bulbophyllum pulchellum,1889,2015
 bulbophyllum purpurascens,1889,1904
 bulbophyllum restrepia,1889,1895
 bulbophyllum rugosum,1890,1890
@@ -324,11 +324,11 @@ calamus javensis,1894,2015
 calamus laevigatus,1890,2015
 calamus lobbianus,1889,2015
 calamus luridus,1900,1906
-calamus ornatus,1892,1909
+calamus ornatus,1892,2015
 calamus oxleyanus,1890,2015
 calamus ridleyanus,1892,2015
 calanthe pulchra,1822,2015
-callerya dasyphylla,1867,1899
+callerya dasyphylla,1867,2015
 callerya eriantha,1894,2015
 callicarpa longifolia,1884,2015
 callostylis pulchella,1889,2015
@@ -496,7 +496,7 @@ cryptocarya impressa,1893,1969
 cryptocarya kurzii,1953,1953
 cryptocarya nitens,2006,2015
 cryptocarya rugulosa,1954,2015
-cryptocoryne ciliata,1896,1974
+cryptocoryne ciliata,1896,2015
 cryptocoryne griffithii,1889,2015
 cryptostylis arachnites,1894,1896
 ctenolophon parvifolius,1937,2015
@@ -516,8 +516,6 @@ cyclea laxiflora,1890,2015
 cyclosorus interruptus,1892,2015
 cymbidium bicolor subsp. pubescens,1891,2015
 cymbidium finlaysonianum,1889,2015
-cymodocea rotundata,1955,2015
-cymodocea serrulata,1949,2015
 cynanchum ovalifolium,1890,2015
 cynodon dactylon,1891,2015
 cynometra ramiflora,1894,2015
@@ -562,7 +560,7 @@ dalbergia junghuhnii,1885,2015
 dalbergia parviflora,1939,2015
 dalbergia rostrata,1822,2015
 dalbergia velutina,1889,2015
-dapania racemosa,1932,1953
+dapania racemosa,1932,2015
 daphniphyllum laurinum,1836,2015
 davallia angustata,1822,1906
 davallia denticulata,1842,2015
@@ -770,7 +768,6 @@ endiandra maingayi,1933,2015
 endocomia canarioides,1894,2015
 endospermum diadenum,1893,2015
 engelhardtia serrata,1889,1900
-enhalus acoroides,1889,2015
 enkleia malaccensis,1993,2015
 entada rheedii,1890,2015
 entada spiralis,1884,2015
@@ -975,13 +972,6 @@ gynotroches axillaris,1838,2015
 gynura procumbens,1890,1993
 habenaria rhodocheila,1904,1904
 hackelochloa granularis,1949,1949
-halodule pinifolia,1892,1956
-halodule uninervis,1950,2015
-halophila beccarii,1940,2015
-halophila decipiens,2007,2015
-halophila minor,1892,2015
-halophila ovalis,1891,2015
-halophila spinulosa,1929,2015
 hancea penangensis,1893,2015
 hedyotis auricularia,1890,2015
 hedyotis capitellata,1992,2015
@@ -1131,7 +1121,7 @@ lasianthus perakensis,1906,1906
 lasianthus ridleyi,1897,2015
 lasianthus stipularis,1887,1906
 lasianthus tomentosus,1889,2015
-lecananthus erubescens,1822,1822
+lecananthus erubescens,1822,2015
 lecanopteris crustacea,1894,2015
 lecanopteris sinuosa,1877,2015
 lecanorchis malaccensis,1882,2015
@@ -1264,7 +1254,7 @@ mapania kurzii,1890,2015
 mapania longiflora,1941,1941
 mapania lorea,1890,1918
 mapania palustris,1889,1981
-mapania squamata,1894,1903
+mapania squamata,1894,2015
 mapania wallichii,1837,1943
 maranthes corymbosa,1886,2015
 margaritaria indica,2012,2015
@@ -1362,7 +1352,6 @@ myristica maingayi,1932,2015
 myristica maxima,1892,2015
 myrmecodia tuberosa,1892,1900
 nageia wallichiana,2013,2015
-najas indica,1965,2015
 nauclea officinalis,1884,2015
 nauclea subdita,1921,1976
 neesia altissima,1941,1941
@@ -1483,7 +1472,7 @@ peltophorum pterocarpum,1890,2015
 pemphis acidula,1822,2015
 pentace triptera,1894,2015
 pentaphragma ellipticum var. ellipticum,1889,2015
-peristylus lacertifer,1889,1918
+peristylus lacertifer,1889,2015
 peristylus maingayi,1886,1953
 peronema canescens,1892,1892
 perotis indica,1884,2015
@@ -1529,7 +1518,7 @@ piper ridleyi,1898,2015
 piper sarmentosum,1884,2015
 piper schizonephos,2012,2015
 pittosporum ferrugineum,1836,2015
-plagiostachys lateralis,1890,1909
+plagiostachys lateralis,1890,2015
 plagiostachys mucida,1892,1892
 planchonella linggensis,1996,2015
 planchonia grandis,1894,2015
@@ -1564,7 +1553,7 @@ polyalthia lateriflora,1937,2015
 polyalthia rumphii,1888,2015
 polyalthia sclerophylla,1900,2015
 polyalthia sumatrana,1893,2015
-polyosma conocarpa,1918,1918
+polyosma conocarpa,1918,2015
 polyosma kingiana,1938,1938
 polyosma ridleyi,1884,1900
 polystachya concreta,1884,2015
@@ -1594,7 +1583,7 @@ prunus grisea,1847,2015
 prunus polystachya,1884,2015
 pseuderanthemum kingii,1885,1894
 pseudoclausena chrysogyne,1981,2015
-psilotum complanatum,1822,1900
+psilotum complanatum,1822,2015
 psilotum nudum,1896,2015
 psychotria angulata,1884,2015
 psychotria cantleyi,2000,2015
@@ -1836,7 +1825,6 @@ symplocos odoratissima,1892,2015
 symplocos rubiginosa,1884,2015
 syngramma alismifolia,1850,2015
 syngramma wallichii,1836,2015
-syringodium isoetifolium,1953,2015
 syzygium acuminatissimum,1884,2015
 syzygium attenuatum,1935,2015
 syzygium avene,1822,1836
@@ -1931,7 +1919,6 @@ tetrastigma curtisii,1894,2015
 tetrastigma dichotomum,1920,2015
 tetrastigma lawsoni,1891,2015
 tetrastigma rafflesiae,1893,2015
-thalassia hemprichii,1956,2015
 thelasis carinata,1889,1890
 thelasis micrantha,1889,1891
 thelasis pygmaea,1889,1900

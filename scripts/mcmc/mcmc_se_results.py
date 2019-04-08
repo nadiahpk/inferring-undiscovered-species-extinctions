@@ -12,11 +12,8 @@ rpy2.robjects.numpy2ri.activate() # so I can pass variables to it
 # parameters
 # ---
 
-suffixes = [0, 1, 2, 3, 4, 5, 6] # the suffixes used for the file names
+suffixes = [0, 1, 2, 3, 4, 5] # the suffixes used for the file names
 burnin = 15000 # discard the first 15000 iterations as burn in NOTE -- in spare.pdf
-
-# NOTE try omitting large burn in?
-burnin = 400000
 
 # location of chains and info
 # ---

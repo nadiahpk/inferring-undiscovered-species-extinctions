@@ -18,10 +18,13 @@ from undetected_extinctions.undetected_extinctions import frst_last_changed_E, g
 U_T = 0 # assume that at the final timestep there are no undetected species remaining
 nreps = 150000
 start_type = 'hi' # or can be: 'hi', to high-start chains; 'lo', for low-start chains
-previous_suffix = 6 # None, or set to a number to start at a previous point
+previous_suffix = 4 # None, or set to a number to start at a previous point
 
+'''
 # for the first run, suffix = 0
-# nreps = 30000
+previous_suffix = None # None, or set to a number to start at a previous point
+nreps = 30000
+'''
 
 # where databases are
 # ---
