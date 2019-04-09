@@ -9,8 +9,11 @@ import numpy as np
 # where are the results stored
 # ---
 
-# fname_classical = '../../results/classical/classical2_fisher_183.csv'
-fname_classical = '../../results/classical/classical2_fisher_184.csv'
+# fname_classical = '../../results/classical/classical_fisher_184.csv'
+# fname_classical = '../../results/classical/classical_fisher_180.csv'
+# fname_classical = '../../results/classical/classical_fisher_160.csv'
+fname_classical = '../../results/classical/classical_fisher_170.csv'
+fname_classical = '../../results/classical/classical_fisher_172.csv'
 
 
 # read in both

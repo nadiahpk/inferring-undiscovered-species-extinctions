@@ -38,14 +38,16 @@ aglaia macrocarpa,0.05889892545204454
 aglaia meliosmoides,0.12985945600881413
 aglaia multinervis,0.18076270169115236
 aglaia odoratissima,0.27858066436787493
+aglaia palembanica,0.03923361085194517
 aglaia rubiginosa,0.13552621390170316
 aglaia rufinervis,0.5082233021313869
+aglaia tomentosa subsp. cordata,0.03162175933285728
 aglaomorpha speciosa,0.27028900338439527
 aglaonema nebulosum,0.1096841199954803
 aglaonema nitidum,0.25297407466285826
 aglaonema simplex,0.1581087966642864
 agrostistachys borneensis,0.2735374121950864
-agrostistachys gaudichaudii,0.999999
+agrostistachys gaudichaudii,0.09178812835325961
 agrostistachys sessilifolia,0.999999
 agrostophyllum majus,0.34402123925555744
 agrostophyllum stipulatum,0.12340459381442984
@@ -248,7 +250,7 @@ bulbophyllum medusae,0.7764298715802743
 bulbophyllum membranaceum,0.0882606648701077
 bulbophyllum ovalifolium,0.6880424785111149
 bulbophyllum patens,0.6880424785111149
-bulbophyllum pulchellum,0.45451173305590475
+bulbophyllum pulchellum,0.18973055599714367
 bulbophyllum purpurascens,0.5425040033946683
 bulbophyllum singaporeanum,0.12648703733142913
 bulbophyllum vaginatum,0.2317267206176639
@@ -268,10 +270,11 @@ calamus insignis,0.12985945600881413
 calamus javensis,0.14379697094272828
 calamus laevigatus,0.09739459200661059
 calamus lobbianus,0.22135231533000096
+calamus ornatus,0.03388155347542579
 calamus oxleyanus,0.3246486400220353
 calamus ridleyanus,0.10164466042627737
 calanthe pulchra,0.2317267206176639
-callerya dasyphylla,0.14145362188014865
+callerya dasyphylla,0.05889892545204454
 callerya eriantha,0.2156954564140924
 callicarpa longifolia,0.3039304579945405
 callostylis pulchella,0.1581087966642864
@@ -407,6 +410,7 @@ cryptocarya griffithiana,0.4147366353460846
 cryptocarya impressa,0.08479467922341505
 cryptocarya nitens,0.23616538453721853
 cryptocarya rugulosa,0.19395841096073724
+cryptocoryne ciliata,0.036505152339763355
 cryptocoryne griffithii,0.34783935266143007
 ctenolophon parvifolius,0.1304637406472406
 ctenopterella blechnoides,0.36938936439309006
@@ -423,8 +427,6 @@ cyclea laxiflora,0.3246486400220353
 cyclosorus interruptus,0.2710524278034063
 cymbidium bicolor subsp. pubescens,0.066203761961632
 cymbidium finlaysonianum,0.18973055599714367
-cymodocea rotundata,0.29672732116533984
-cymodocea serrulata,0.2787014232935704
 cynanchum ovalifolium,0.12985945600881413
 cynodon dactylon,0.33101880980815995
 cynometra ramiflora,0.14379697094272828
@@ -465,6 +467,7 @@ dalbergia junghuhnii,0.36715251341303845
 dalbergia parviflora,0.044568688949224715
 dalbergia rostrata,0.34759008092649585
 dalbergia velutina,0.1581087966642864
+dapania racemosa,0.042085661891913685
 daphniphyllum laurinum,0.2039198253150054
 davallia angustata,0.3482252490554526
 davallia denticulata,0.5610103950106787
@@ -624,7 +627,6 @@ embelia ribes,0.8776453161167743
 endiandra maingayi,0.04238625301596963
 endocomia canarioides,0.07189848547136414
 endospermum diadenum,0.3482258304598436
-enhalus acoroides,0.34783935266143007
 enkleia malaccensis,0.4657910943812504
 entada rheedii,0.06492972800440706
 entada spiralis,0.8510052823847133
@@ -800,13 +802,6 @@ gynochthodes coriacea,0.22350338954620275
 gynochthodes sublanceolata,0.999999
 gynotroches axillaris,0.999999
 gynura procumbens,0.19478918401322118
-halodule pinifolia,0.10759629450575556
-halodule uninervis,0.23427194025352135
-halophila beccarii,0.3838944199841811
-halophila decipiens,0.5196424409661725
-halophila minor,0.16940776737712895
-halophila ovalis,0.43032445275060793
-halophila spinulosa,0.29146461304299587
 hancea penangensis,0.20893549827590618
 hedyotis auricularia,0.12985945600881413
 hedyotis capitellata,0.08854628827793369
@@ -1018,7 +1013,6 @@ macaranga hypoleuca,0.35899165678723527
 macaranga lowii,0.4065786417051095
 macaranga recurvata,0.35711350402423886
 macaranga trichocarpa,0.6990400533874431
-macaranga triloba,0.4450909817480097
 machaerina rubiginosa,0.4729925750786619
 maclurodendron porteri,0.3246486400220353
 macrolenes echinulata,0.5822951817944154
@@ -1044,7 +1038,7 @@ mapania bancana,0.3967425634534883
 mapania cuspidata,0.22135231533000096
 mapania kurzii,0.19478918401322118
 mapania palustris,0.22556096288436958
-mapania squamata,0.6110844778953755
+mapania squamata,0.07189848547136414
 mapania wallichii,0.1642870750986694
 maranthes corymbosa,0.39933684979404394
 mastixia trichotoma var. maingayi,0.08834838817806681
@@ -1120,7 +1114,6 @@ myristica lowiana,0.2516446991497745
 myristica maingayi,0.16834264756765474
 myristica maxima,0.23717087432798054
 myrmecodia tuberosa,0.5265807804032896
-najas indica,0.1127696618986995
 nauclea officinalis,0.37946111199428734
 nauclea subdita,0.3225740638836403
 neesia malayana,0.20328932085255474
@@ -1221,7 +1214,7 @@ peltophorum pterocarpum,0.55190268803746
 pemphis acidula,0.7241460019301996
 pentace triptera,0.28759394188545656
 pentaphragma ellipticum var. ellipticum,0.6956787053228601
-peristylus lacertifer,0.7503970610013783
+peristylus lacertifer,0.18973055599714367
 perotis indica,0.09739459200661059
 persea declinata,0.999999
 pertusadina eurhyncha,0.22020867256691654
@@ -1253,7 +1246,7 @@ piper ramipilum,0.0771953050706377
 piper ribesioides,0.04848960274018431
 piper sarmentosum,0.42550264119235665
 pittosporum ferrugineum,0.5375699086585738
-plagiostachys lateralis,0.3843870774589813
+plagiostachys lateralis,0.09739459200661059
 planchonella linggensis,0.5592254892874434
 planchonia grandis,0.03594924273568207
 platea latifolia,0.04506632703006591
@@ -1309,7 +1302,7 @@ prunus grisea,0.2636206229349128
 prunus polystachya,0.999999
 pseuderanthemum kingii,0.5041632989648004
 pseudoclausena chrysogyne,0.07450112984873425
-psilotum complanatum,0.3444458385702433
+psilotum complanatum,0.08689752023162396
 psilotum nudum,0.14602060935905342
 psychotria griffithii,0.1490022596974685
 psychotria helferiana,0.6951801618529917
@@ -1515,7 +1508,6 @@ symplocos odoratissima,0.06776310695085158
 symplocos rubiginosa,0.4404601951805353
 syngramma alismifolia,0.1078477282070462
 syngramma wallichii,0.06151522031145366
-syringodium isoetifolium,0.3366175699334974
 syzygium acuminatissimum,0.6776310695085158
 syzygium attenuatum,0.2134545157731883
 syzygium borneense,0.7905439833214319
@@ -1600,7 +1592,6 @@ tetrastigma curtisii,0.07189848547136414
 tetrastigma dichotomum,0.04051623837690583
 tetrastigma lawsoni,0.132407523923264
 tetrastigma rafflesiae,0.20893549827590618
-thalassia hemprichii,0.35410571369106664
 thelasis micrantha,0.999999
 thelypteris truncata,0.13300261218690726
 themeda villosa,0.41895361593792996

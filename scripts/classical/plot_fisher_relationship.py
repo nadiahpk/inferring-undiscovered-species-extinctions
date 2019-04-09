@@ -7,24 +7,38 @@ import numpy as np
 # user parameters
 # ---
 
-Sf = 1589   # the number of detected extant species at end
-turner = 0.76; brook = 0.74; this_study = 0.34
-
 # where results from fisher relationship stored
-# ---
-
 fname_results = '../../results/classical/fisher_relationship/fisher_relationship.csv'
+fname_basic = '../../results/classical/classical_basic_result.csv'
 
 
 # read in results
 # ---
 
+# classical basic results, to get the omega = 1 case
+csv_f = csv.reader(open(fname_basic))
+header = next(csv_f)                        # header order is: year,S,E,U_mean,X_mean,U_lo,U_hi,X_lo,X_hi
+basic = [ [ float(v) for v in row ] for row in csv_f ]
+
+# tidy up to get important info for omega = 1
+_, S, E, U, X, U_lo, U_hi, X_lo, X_hi = basic[-1] # last row is at year 2015
+Sf = S # number of detected extant species at end
+N1_mean = S+E+X
+N1_lo = S+E+X_lo
+N1_hi = S+E+X_hi
+
+
+# fisher relationship results
 csv_f = csv.reader(open(fname_results))
 header = next(csv_f)                        # header order is: omega,N_mean,N_lo,N_hi,nreps
 results = [ [ float(v) for v in row ] for row in csv_f ]
 
-omegaV, N_meanV, N_loV, N_hiV, _ = zip(* results )
+omegaV, N_meanV, N_loV, N_hiV, _ = [list(l) for l in zip(* results)]
+
+# append the result for omega = 1
+omegaV.append(1); N_meanV.append(N1_mean); N_loV.append(N1_lo); N_hiV.append(N1_hi)
 omegaV = np.array(omegaV); N_meanV = np.array(N_meanV); N_loV = np.array(N_loV); N_hiV = np.array(N_hiV)
+
 
 # calculate extinction rates
 # ----
@@ -34,8 +48,6 @@ extn_rate_loV = (N_loV-Sf) / N_loV
 extn_rate_hiV = (N_hiV-Sf) / N_hiV
 
 plt.plot(omegaV, extn_rate_meanV, 'o-', color='black', label='mean')
-#plt.axhline( brook,  ls='dotted', color='black', label='Brook et al. (2003)' )
-#plt.axhline( this_study,  ls='dashed', color='black', label='SEUX main result ($\omega=1$)' )
 plt.fill_between(omegaV, extn_rate_loV, extn_rate_hiV, facecolor='black', alpha=0.5, label='95% CI')
 plt.xlabel('odds ratio of survival probability of undetected versus detected species $\omega$')
 plt.ylabel('inferred total extinction rate')

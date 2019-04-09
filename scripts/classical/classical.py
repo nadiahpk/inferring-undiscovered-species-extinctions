@@ -23,15 +23,15 @@ U_T = 0         # assume that at the final timestep there are no undetected spec
 percentile = 95 # CI that I want
 nreps = 10000   # how many samples to take
 
+'''
 # basic result, omega == 0
 omega = None    # central hypergeometric variant
 suffix = 'basic_result' # a suffix for the filename for the results
-
 '''
 # Fisher result to approximately match Brooks
-omega = 0.184    # central hypergeometric variant
-suffix = 'fisher_184' # a suffix for the filename for the results
-'''
+omega = 0.172    # central hypergeometric variant
+suffix = 'fisher_172' # a suffix for the filename for the results
+#nreps = 1000   # how many samples to take
 
 # where databases are etc.
 # ---
