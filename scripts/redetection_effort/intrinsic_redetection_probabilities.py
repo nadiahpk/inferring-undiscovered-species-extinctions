@@ -27,11 +27,11 @@ fname_redetn_effort = '../../results/redetection_effort/tighten/tighten_' + str(
 # turn definite-detections years into a redetection record
 # ---
 
-# identify species extant after 2015 (these I can count detection at 2015 for)
+# get extant species based on the info we had before we did the Solow p-value check
 csv_f = csv.reader(open(fname_frstlast))
 header = next(csv_f)
-# presumed extant = seen after 1985, experts say it is extant, or species was common in 2009
-extants = [ row[0] for row in csv_f if int(row[2]) > 1985 or row[4] or row[5] ]
+# extant if last detected since 1985, experts say extant, or common
+extants = [ row[0] for row in csv_f if int(row[2]) > 1985 or row[4] == 'yes' or row[5] == 'yes' ]
 
 # get the detections
 f = open(fname_detns,'rb')
@@ -111,8 +111,8 @@ plt.hist([ extinct_redetnV, extant_redetnV], bins=bins,
         label=['presumed extinct', 'presumed extant'],
         color=['black','gray'], alpha=0.7, stacked=False)
 plt.legend(loc='best')
-plt.ylabel('frequency', fontsize='large')
-plt.xlabel('intrinsic redetection probability', fontsize='large')
+plt.ylabel('number of species', fontsize='large')
+plt.xlabel(r'species intrinsic redetection probability $r_i$', fontsize='large')
 plt.xlim( (-delta, 1+delta) )
 #plt.show()
 plt.tight_layout()

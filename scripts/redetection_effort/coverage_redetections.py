@@ -30,6 +30,7 @@ f.close()
 min_lifespan = 30
 coverage = { t: 0 for t in range(t0, tf+1) }
 
+cnt_spp = 0
 for spp, D in spp_redetns.items():
 
     frst = D['frst']
@@ -37,6 +38,7 @@ for spp, D in spp_redetns.items():
 
     lifespan = last-frst
     if lifespan >= min_lifespan:
+        cnt_spp += 1
 
         for t in range( max(t0,frst+1), min(last,tf+1) ):
             coverage[t] += 1
@@ -46,10 +48,10 @@ tV,cV = zip(* sorted( coverage.items() , key = lambda v: v[0] ) )
 plt.plot(tV, cV, lw=2, color='black')
 plt.axvline(t0, color='black', ls='dotted')
 plt.axvline(tf, color='black', ls='dotted')
-plt.xlabel('year')
+plt.xlabel('year', fontsize="x-large")
 plt.ylim( (0,1400) )
 plt.text(tV[0]+5, cV[0]+10, '(' + str(tV[0]) + ',' + str(cV[0]) + ')')
-plt.ylabel('no. species w. records covering\nyear when minimum spp lifespan = ' + str(min_lifespan))
+plt.ylabel('number of species with\nrecords covering year', fontsize="x-large")
 plt.grid(True)
 #plt.show()
 plt.tight_layout()

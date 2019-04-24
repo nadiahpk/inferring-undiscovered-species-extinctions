@@ -16,7 +16,6 @@ t0 = 1796; tf = 1984
 
 fname_frstlast = '../../data/processed/first_last_detns.csv'
 
-
 # read in year of discovery, whether presumed extant or extinct, put in list in dictionary
 # ---
 
@@ -31,27 +30,28 @@ for row in csv_f:
 
     # is it presumed extinct or extant?
     
+    #  expert_extant   or common          or last detected in last 30 years
     if row[4] == 'yes' or row[5] == 'yes' or last >= 1985:
-        extant = 1
+        extinct = 0
     else:
-        extant = 0
+        extinct = 1
 
     # append to our dictionary
     if frst in D:
-        D[frst].append(extant)
+        D[frst].append(extinct)
     else:
-        D[frst] = [extant]
+        D[frst] = [extinct]
 
 
-# calculate the average proportion of species extant by year of discovery
+# calculate the average proportion of species extinct by year of discovery
 # ---
 
-frst, propn_extant = zip(* [ (frst, np.mean(D[frst])) for frst in sorted(D.keys()) if frst < 1985 ] )
+frst, propn_extinct = zip(* [ (frst, np.mean(D[frst])) for frst in sorted(D.keys()) if frst < 1985 ] )
 
 fig = plt.figure(figsize=(.7*8, .7*6)) # plotting as we go
 ax = fig.add_subplot(111)
 
-ax.scatter(frst, propn_extant, s=5, color='black', label='year-averaged')
+ax.scatter(frst, propn_extinct, s=5, color='black', label='year-averaged')
 
 # the above is obviously hard to read because sometimes there aren't that many species detected in a year
 # use a rolling window
@@ -80,7 +80,7 @@ for N, label in zip(NV, labelV):
 
 ax.legend(loc='best')
 ax.set_xlabel('year of first detection (discovery)')
-ax.set_ylabel('proportion of species presumed extant')
+ax.set_ylabel('proportion of species presumed extinct')
 #plt.show()
 plt.tight_layout()
 plt.savefig('../../results/describe_data/propn_extinct_v_discovery.pdf')
