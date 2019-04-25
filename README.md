@@ -12,7 +12,20 @@ Kristensen, N.P., ... Chishom, R.A. (in prep) Estimating extinctions of undiscov
 
 **Abstract**
 
-The highly developed island city-state of Singapore has one of the best-documented tropical floras in the world.  We collated museum and herbarium records of plant collections in Singapore since 1796, with the goal of estimating the total extinction rate since 1822.  Our database includes 2090 native species, of which 501 (24%) are now apparently locally extinct.  We used a statistical model and two inference techniques -- classical and Bayesian -- to estimate the number of undetected extinctions.  We estimate that between 319 and 544 additional species went extinct before they were ever discovered, suggesting a total extinction rate of 34--37%.  These numbers serve to illustrate the magnitudes of local species loss that can be expected in the tropics as extensive development continues.
+Extinction is a key issue in the assessment of global biodiversity.
+However, many measures of the rate of extinction neglect to account for species that went extinct before they could be discovered.
+The highly developed island city-state of Singapore has one of the best-documented tropical floras in the world.
+This presents a unique opportunity to estimate the total rate of local floristic extinctions,
+after accounting for sampling effort and crypto-extinctions.
+We collated herbaria records of plant collections in Singapore with the goal of estimating the total extinction rate since 1822.
+Our database includes 2076 native species,
+of which 464 (22%) are now apparently locally extinct.
+We used a statistical model and two inference techniques -- classical and Bayesian --
+to estimate the number of undiscovered extinctions.
+We estimate that between 304 and 412 additional species went extinct before they could be discovered,
+suggesting a total extinction rate of 32--35%.
+These numbers serve to illustrate the possible magnitudes of local species loss that can be expected in the tropics as extensive
+development continues.
 
 ## About the repository
 
