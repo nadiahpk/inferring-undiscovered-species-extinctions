@@ -48,7 +48,11 @@ import numpy as np
 # -- similar to birds data
 # fName = 'verify_midp_U0_48_nreps_50_nsamples_100.pkl' # -- can already see that this is not working well
 # fName = 'verify_fbnd_U0_48_nreps_50_nsamples_100.pkl' # -- looks reasonable
-fName = 'verify_fbnd_U0_48_nreps_1000_nsamples_500.pkl' # -- verify above, is a good fit
+# fName = 'verify_fbnd_U0_48_nreps_1000_nsamples_500.pkl' # -- verify above, is a good fit
+
+# -- after talking with Andy Solow
+fName = 'verify_midp_U0_120_nreps_101_nsamples_100.pkl' # -- keep detections at constant 2
+fName = 'verify_midp_U0_120_nreps_1000_nsamples_500.pkl' # -- choose detections from {1,2,3}, find good agreement
 
 # read in the pickle file with the results
 # ---
@@ -57,7 +61,8 @@ fName = 'verify_fbnd_U0_48_nreps_1000_nsamples_500.pkl' # -- verify above, is a 
 # dirName = '../../../results/classical/verify/'    # constant detections
 # dirName = '../../../results/classical/verify2/'   # choose detections from set of integers
 # dirName = '../../../results/classical/verify3/'   # no collapsing of timesteps
-dirName = '../../../results/classical/verify4/'   # data similar to birds study
+# dirName = '../../../results/classical/verify4/'   # data similar to birds study
+dirName = '../../../results/classical/verify5/'   # after Andy Solow's feedback
 
 f = open(dirName + fName, 'rb')
 ss = pickle.load( f )

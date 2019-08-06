@@ -36,10 +36,10 @@ for dname_res, fname_res in zip(dname_resV, fname_resV):
     # plot them
     # ---
 
-    plt.plot(years_mod, S,       'green',  lw=2, label = r'detected extant, $S_t$')
-    plt.plot(years_mod, E,       'red',    lw=2, label = r'detected extinct, $E_t$')
-    plt.plot(years_mod, U_means, 'orange', lw=1, label = r'inferred undetected extant, $\bar{U}_t$')
-    plt.plot(years_mod, X_means, 'blue',   lw=1, label = r'inferred undetected extinct, $\bar{X}_t$')
+    plt.plot(years_mod, S,       'green',  lw=2, label = r'discovered extant, $S_t$')
+    plt.plot(years_mod, E,       'red',    lw=2, label = r'discovered extinct, $E_t$')
+    plt.plot(years_mod, U_means, 'orange', lw=1, label = r'inferred undiscovered extant, $\bar{U}_t$')
+    plt.plot(years_mod, X_means, 'blue',   lw=1, label = r'inferred undiscovered extinct, $\bar{X}_t$')
 
     plt.text( 2016, S[-1], str(int(round(S[-1]))), color='green' , verticalalignment='center', fontsize='x-small')
     plt.text( 2016, E[-1], str(int(round(E[-1]))), color='red' , verticalalignment='bottom', fontsize='x-small')
@@ -64,7 +64,7 @@ for dname_res, fname_res in zip(dname_resV, fname_resV):
 # plot legend only
 # ---
 
-if False:
+if True:
 
     import pylab
 
@@ -78,10 +78,10 @@ if False:
     legend = figlegend.legend( 
                                 (lineS[0], lineE[0], lineU[0], lineX[0]) , 
                                 (
-                                    r'detected extant, $S_t$', 
-                                    r'detected extinct, $E_t$', 
-                                    r'inferred undetected extant, $\bar{U}_t$', 
-                                    r'inferred undetected extinct, $\bar{X}_t$'),
+                                    r'discovered extant, $S_t$', 
+                                    r'discovered extinct, $E_t$', 
+                                    r'inferred undiscovered extant, $\bar{U}_t$', 
+                                    r'inferred undiscovered extinct, $\bar{X}_t$'),
                                 'center',
                                 fontsize='large'
                                 )

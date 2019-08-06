@@ -12,8 +12,8 @@ import numpy as np
 # fname_classical = '../../results/classical/classical_fisher_184.csv'
 # fname_classical = '../../results/classical/classical_fisher_180.csv'
 # fname_classical = '../../results/classical/classical_fisher_160.csv'
-fname_classical = '../../results/classical/classical_fisher_170.csv'
 fname_classical = '../../results/classical/classical_fisher_172.csv'
+fname_classical = '../../results/classical/classical_fisher_170.csv'
 
 
 # read in both
@@ -32,10 +32,10 @@ years_mod, S, E, c_U_means, c_X_means, c_U_los, c_U_his, c_X_los, c_X_his = zip(
 
 # classical result
 
-plt.plot(years_mod, S,       'green',  lw=2, label = r'detected extant, $S_t$')
-plt.plot(years_mod, E,       'red',    lw=2, label = r'detected extinct, $E_t$')
-plt.plot(years_mod, c_U_means, 'orange', lw=1, label = r'classical inferred undetected extant, $\bar{U}_t$')
-plt.plot(years_mod, c_X_means, 'blue',   lw=1, label = r'classical inferred undetected extinct, $\bar{X}_t$')
+plt.plot(years_mod, S,       'green',  lw=2, label = r'discovered extant, $S_t$')
+plt.plot(years_mod, E,       'red',    lw=2, label = r'discovered extinct, $E_t$')
+plt.plot(years_mod, c_U_means, 'orange', lw=1, label = r'classical inferred undiscovered extant, $\bar{U}_t$')
+plt.plot(years_mod, c_X_means, 'blue',   lw=1, label = r'classical inferred undiscovered extinct, $\bar{X}_t$')
 
 plt.text( 2016, S[-1], str(int(round(S[-1]))), color='green' , verticalalignment='center', fontsize='x-small')
 plt.text( 2016, E[-1], str(int(round(E[-1]))), color='red' , verticalalignment='bottom', fontsize='x-small')

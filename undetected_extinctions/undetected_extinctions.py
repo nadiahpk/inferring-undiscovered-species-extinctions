@@ -159,7 +159,7 @@ def get_SE(frst_last, years=None):
 
 def find_U0_bnd(alpha, S0, S1, U1, d0, impossibleFlag=False, omega=None, biasedurn=None):
     '''
-    U0_bnd = inverse_midp(alpha, min_poss_U0, S0, S1, U1, d0, omega=None, biasedurn=None)
+    U0_bnd = inverse_midp(alpha, min_poss_U0, S0, S1, U1, d0, impossibleFlag=False, omega=None, biasedurn=None)
 
     Find the bound for the number of undetected extant species at the previous timestep (U0)
     given the data at a given timestep (S1, U1, d0 etc.) and confidence level using the

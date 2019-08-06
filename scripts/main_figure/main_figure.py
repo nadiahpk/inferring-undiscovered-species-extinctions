@@ -39,13 +39,13 @@ _, _, _, m_U_means, m_X_means, m_U_los, m_U_his, m_X_los, m_X_his = zip(* m_res 
 
 plt.plot([], [], lw=0, label='Inferred from data:')
 
-plt.plot(years_mod, S,       'green',  lw=2, label = r'detected extant, $S_t$')
-plt.plot(years_mod, E,       'red',    lw=2, label = r'detected extinct, $E_t$')
+plt.plot(years_mod, S,       'green',  lw=2, label = r'discovered extant, $S_t$')
+plt.plot(years_mod, E,       'red',    lw=2, label = r'discovered extinct, $E_t$')
 
 plt.plot([], [], lw=0, label='Classical inference:')
 
-plt.plot(years_mod, c_U_means, 'orange', lw=1, label = r'undetected extant, ${U}_t$')
-plt.plot(years_mod, c_X_means, 'blue',   lw=1, label = r'undetected extinct, ${X}_t$')
+plt.plot(years_mod, c_U_means, 'orange', lw=1, label = r'undiscovered extant, ${U}_t$')
+plt.plot(years_mod, c_X_means, 'blue',   lw=1, label = r'undiscovered extinct, ${X}_t$')
 
 plt.text( 2016, S[-1], str(int(round(S[-1]))), color='green' , verticalalignment='center', fontsize='x-small')
 plt.text( 2016, E[-1], str(int(round(E[-1]))), color='red' , verticalalignment='bottom', fontsize='x-small')
@@ -60,8 +60,8 @@ plt.fill_between(years_mod, c_X_los, c_X_his, facecolor='blue', alpha=0.3)
 
 plt.plot([], [], lw=0, label='Bayesian inference:')
 
-plt.plot(years_mod, m_U_means, 'brown', lw=1, label = r'undetected extant, ${U}_t$')
-plt.plot(years_mod, m_X_means, 'magenta',   lw=1, label = r'undetected extinct, ${X}_t$')
+plt.plot(years_mod, m_U_means, 'brown', lw=1, label = r'undiscovered extant, ${U}_t$')
+plt.plot(years_mod, m_X_means, 'magenta',   lw=1, label = r'undiscovered extinct, ${X}_t$')
 
 plt.text( 2016, m_X_means[-1], str(int(round(m_X_means[-1]))), color='magenta' , verticalalignment='center', fontsize='x-small')
 plt.text( 1821, m_U_means[0], str(int(round(m_U_means[0]))), color='brown' , verticalalignment='bottom', horizontalalignment='right', fontsize='x-small')
