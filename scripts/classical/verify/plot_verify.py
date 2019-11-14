@@ -54,6 +54,10 @@ import numpy as np
 fName = 'verify_midp_U0_120_nreps_101_nsamples_100.pkl' # -- keep detections at constant 2
 fName = 'verify_midp_U0_120_nreps_1000_nsamples_500.pkl' # -- choose detections from {1,2,3}, find good agreement
 
+# -- after talking with Andy Solow, extinction rate varying
+fName = 'verify_midp_U0_120_nreps_1000_nsamples_500.pkl'
+fName = 'verify_midp_U0_120_nreps_1000_nsamples_1000.pkl'
+
 # read in the pickle file with the results
 # ---
 
@@ -62,7 +66,8 @@ fName = 'verify_midp_U0_120_nreps_1000_nsamples_500.pkl' # -- choose detections 
 # dirName = '../../../results/classical/verify2/'   # choose detections from set of integers
 # dirName = '../../../results/classical/verify3/'   # no collapsing of timesteps
 # dirName = '../../../results/classical/verify4/'   # data similar to birds study
-dirName = '../../../results/classical/verify5/'   # after Andy Solow's feedback
+# dirName = '../../../results/classical/verify5/'   # after Andy Solow's feedback
+dirName = '../../../results/classical/verify6/'   # after Andy Solow's feedback, extinction rate varying
 
 f = open(dirName + fName, 'rb')
 ss = pickle.load( f )
