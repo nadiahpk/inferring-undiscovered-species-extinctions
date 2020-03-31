@@ -8,24 +8,11 @@ This repository stores data and code (mostly Python3, with some interface to R) 
 
 ## About the manuscript
 
-Kristensen, N.P., ... Chishom, R.A. (in prep) Estimating extinctions of undiscovered plant species in Singapore
+Kristensen, N.P., Seah, W.W., Chong, K.Y., Yeoh, Y.S., Fung, T., Berman, L.M., Tan, H.Z., Chishom, R.A. (2020) Extinction rate of discovered and undiscovered plants in Singapore, Conservation Biology
 
 **Abstract**
 
-Extinction is a key issue in the assessment of global biodiversity.
-However, many measures of the rate of extinction neglect to account for species that went extinct before they could be discovered.
-The highly developed island city-state of Singapore has one of the best-documented tropical floras in the world.
-This presents a unique opportunity to estimate the total rate of local floristic extinctions,
-after accounting for sampling effort and crypto-extinctions.
-We collated herbaria records of plant collections in Singapore with the goal of estimating the total extinction rate since 1822.
-Our database includes 2076 native species,
-of which 464 (22%) are now apparently locally extinct.
-We used a statistical model and two inference techniques -- classical and Bayesian --
-to estimate the number of undiscovered extinctions.
-We estimate that between 304 and 412 additional species went extinct before they could be discovered,
-suggesting a total extinction rate of 32--35%.
-These numbers serve to illustrate the possible magnitudes of local species loss that can be expected in the tropics as extensive
-development continues.
+Extinction is a key issue in the assessment of global biodiversity.  However, many extinction-rate measures do not account for species that went extinct before they could be discovered.  The highly developed island city-state of Singapore has one of the best-documented tropical floras in the world. This allowed us to estimate the total rate of local floristic extinctions in Singapore since 1822 after accounting for sampling effort and cryptoextinctions by collating herbaria records.  Our database comprised 34224 specimens from 2076 native species, of which 464 species (22%) were considered nationally extinct.  We assumed that undiscovered species had the same annual per-species extinction rates as discovered species and that no undiscovered species remained extant.  With classical and Bayesian algorithms, we estimated that, respectively, 304 (95% CI 213-414) and 412 (95% credible interval 313-534) additional species went extinct before they could be discovered; thus, corresponding total extinction rate estimates were 32% and 35% (range 30–38%).  We detected violations of our two assumptions that could cause our extinction estimates, particularly the absolute numbers, to be biased downward.  Thus, our estimates should be treated as lower bounds.  Our results illustrate the possible magnitudes of plant extirpations that can be expected in the tropics as development continues.
 
 ## About the repository
 
