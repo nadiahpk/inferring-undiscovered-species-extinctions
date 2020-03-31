@@ -1,5 +1,7 @@
 # Inferring undiscovered species' extinctions
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3733920.svg)](https://doi.org/10.5281/zenodo.3733920)
+
 ## Overview
 
 This repository stores data and code (mostly Python3, with some interface to R) that was used to infer the number of vascular plant species that went extinct in Singapore since colonialisation, including those that went extinct before they could be discovered, using the SEUX model (Chisholm et al. 2016). 
