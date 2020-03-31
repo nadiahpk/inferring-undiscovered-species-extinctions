@@ -66,12 +66,15 @@ cV_data = [ n/s if s > 0 else np.nan for n, s in zip(no_redetns_bytime, sum_rede
 # plot comparison of fit to data
 # ---
 
+plt.rcParams["font.family"] = "serif"
+plt.rcParams["mathtext.fontset"] = "dejavuserif"
+
 plt.figure(figsize=(8*.7,6*.7))
-plt.scatter(tV, cV_data, marker='s', color='red', alpha=0.5, label='data')
-plt.scatter(ts, cs, color='blue', alpha=0.5)
-plt.plot(tV, cV_fit, color='blue', label='fitted $c(t)$')
-plt.xlabel('time', fontsize='large')
-plt.ylabel('redetection effort', fontsize='large')
+plt.plot(tV, cV_fit, color='black', label='fitted $c(t)$')
+plt.scatter(tV, cV_data, color='black', alpha=0.5, label='data')
+#plt.scatter(ts, cs, color='black', alpha=0.5)
+plt.xlabel('Time', fontsize='large')
+plt.ylabel('Redetection effort', fontsize='large')
 plt.grid(True)
 plt.legend(loc='best')
 #plt.show()

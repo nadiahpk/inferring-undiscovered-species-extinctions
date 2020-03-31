@@ -67,6 +67,9 @@ cumul_cnt_famV = np.cumsum(cnt_famV)
 # plot years with new species
 # ---
 
+plt.rcParams["font.family"] = "serif"
+plt.rcParams["mathtext.fontset"] = "dejavuserif"
+
 end_spp = yearV.index(max(year_sppV))
 end_fam = yearV.index(max(year_famV))
 
@@ -74,8 +77,8 @@ plt.figure(figsize=(4*0.7,3*0.7))
 plt.plot(yearV[:end_spp+1], cumul_cnt_sppV[:end_spp+1], color='black', lw=2)
 plt.xlim( (1795,2020) )
 plt.ylim( (0,2200) )
-plt.ylabel( 'species' )
-plt.xlabel( 'year' )
+plt.ylabel( 'Species' )
+plt.xlabel( 'Year' )
 plt.grid(True)
 #plt.show()
 plt.tight_layout()
@@ -86,8 +89,8 @@ plt.figure(figsize=(4*0.7,3*0.7))
 plt.plot(yearV[:end_fam+1], cumul_cnt_famV[:end_fam+1], color='black', lw=2)
 plt.xlim( (1795,2020) )
 plt.ylim( (0,180) )
-plt.ylabel( 'families' )
-plt.xlabel( 'year' )
+plt.ylabel( 'Families' )
+plt.xlabel( 'Year' )
 plt.grid(True)
 #plt.show()
 plt.tight_layout()

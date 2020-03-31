@@ -47,11 +47,12 @@ extn_rate_meanV = (N_meanV-Sf) / N_meanV     # calculate extinction rate
 extn_rate_loV = (N_loV-Sf) / N_loV
 extn_rate_hiV = (N_hiV-Sf) / N_hiV
 
-plt.plot(omegaV, extn_rate_meanV, 'o-', color='black', label='mean')
+plt.figure(figsize=(6*.7,6*.7))
+plt.plot(omegaV, extn_rate_meanV, color='black', label='mean')
 plt.fill_between(omegaV, extn_rate_loV, extn_rate_hiV, facecolor='black', alpha=0.5, label='95% CI')
-plt.xlabel('odds ratio of survival probability of undiscovered versus discovered species $\omega$')
-plt.ylabel('inferred total extinction rate')
-plt.ylim( (0,1) )
+plt.xlabel('odds ratio of discovered versus' + '\n' + r'undiscovered species survival, $\omega$', fontsize='large')
+plt.ylabel('inferred total extinction rate', fontsize='large')
+#plt.ylim( (0,1) )
 #plt.xlim( (0,1) )
 plt.grid(True)
 plt.legend(loc='best')

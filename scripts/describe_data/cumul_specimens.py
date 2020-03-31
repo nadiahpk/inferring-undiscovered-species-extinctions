@@ -67,12 +67,15 @@ cumul_countV = np.cumsum(countV)
 # plot
 # ---
 
+plt.rcParams["font.family"] = "serif"
+plt.rcParams["mathtext.fontset"] = "dejavuserif"
+
 plt.figure(figsize=(4*0.7,3*0.7))
 plt.plot(yearV, cumul_countV, color='black', lw=2)
 plt.xlim( (1795,2020) )
 plt.ylim( (0,35000) )
-plt.ylabel( 'specimens' )
-plt.xlabel( 'year' )
+plt.ylabel( 'Specimens' )
+plt.xlabel( 'Year' )
 plt.grid(True)
 #plt.show()
 plt.tight_layout()

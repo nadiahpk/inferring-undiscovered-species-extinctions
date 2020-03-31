@@ -106,13 +106,16 @@ extinct_redetnV = [ redetn_prob for name, redetn_prob in redetn_probs.items() if
 delta = 0.05
 bins = np.arange(-delta/2, 1+delta, delta)
 
+plt.rcParams["font.family"] = "serif"
+plt.rcParams["mathtext.fontset"] = "dejavuserif"
+
 plt.figure(figsize=(.7*8, .7*6))
 plt.hist([ extinct_redetnV, extant_redetnV], bins=bins,
         label=['presumed extinct', 'presumed extant'],
         color=['black','gray'], alpha=0.7, stacked=False)
 plt.legend(loc='best')
-plt.ylabel('number of species', fontsize='large')
-plt.xlabel(r'species intrinsic redetection probability $r_i$', fontsize='large')
+plt.ylabel('Number of species', fontsize='large')
+plt.xlabel(r'Species intrinsic redetection probability $r_i$', fontsize='large')
 plt.xlim( (-delta, 1+delta) )
 #plt.show()
 plt.tight_layout()
